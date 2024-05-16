@@ -1,0 +1,386 @@
+{
+  "mod_elements": [
+    {
+      "name": "GetRechargeInfo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_recharge_info",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/GetRechargeInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Recharge"
+    },
+    {
+      "name": "RechargeStoneTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_stone_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/RechargeStoneTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Recharge"
+    },
+    {
+      "name": "GetRechargeStoneState",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_recharge_stone_state",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/GetRechargeStoneStateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Recharge"
+    },
+    {
+      "name": "CustomStone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tcpmod/models/item/custom_stone.json",
+          "src/main/java/com/esmods/tcpmod/item/CustomStoneItem.java",
+          "src/main/resources/assets/tcpmod/models/item/custom_stone_0.json"
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomMaster",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_master",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/potion/CustomMasterMobEffect.java"
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomStoneUse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_stone_use",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomStoneUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tcpmod/models/item/custom_armor_leggings.json",
+          "src/main/resources/assets/tcpmod/models/item/custom_armor_chestplate.json",
+          "src/main/resources/assets/tcpmod/models/item/custom_armor_boots.json",
+          "src/main/java/com/esmods/tcpmod/item/CustomArmorItem.java",
+          "src/main/resources/assets/tcpmod/models/item/custom_armor_helmet.json"
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomArmorHelmetRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_armor_helmet_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomArmorHelmetRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomArmorChestplateRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_armor_chestplate_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomArmorChestplateRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomArmorLeggingsRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_armor_leggings_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomArmorLeggingsRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomArmorBootsRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_armor_boots_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomArmorBootsRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tcpmod/models/item/custom_sword.json",
+          "src/main/java/com/esmods/tcpmod/item/CustomSwordItem.java"
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomSwordRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_sword_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomSwordRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomMasterStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_master_start",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomMasterStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "DetransformKey",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detransform_key",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/DetransformKeyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "CustomMasterEnd",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_master_end",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomMasterEndProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "item.tcpmod.custom_armor_boots": "Custom Boots",
+      "item.tcpmod.custom_stone": "Custom Stone",
+      "effect.tcpmod.custom_master": "Custom Master",
+      "item.tcpmod.custom_armor_chestplate": "Custom Chestplate",
+      "item.tcpmod.custom_armor_helmet": "Custom Helmet",
+      "item.tcpmod.custom_sword": "Custom Sword",
+      "item.tcpmod.custom_armor_leggings": "Custom Leggings"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Recharge",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "CustomStone",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "tcpmod",
+    "modName": "Template Custom Powers Mod",
+    "version": "1.0.0",
+    "author": "TEMPLATE",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [
+      "power"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib",
+      "cpapi"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "TEMPLATE",
+    "modElementsPackage": "com.esmods.tcpmod"
+  },
+  "mcreatorVersion": 202400118518
+}

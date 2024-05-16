@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Not specified"
+
+[[mods]]
+modId="tcpmod"
+version="1.0.0"
+displayName="Template Custom Powers Mod"
+displayURL="https://mcreator.net"
+credits="TEMPLATE"
+authors="TEMPLATE"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.tcpmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.tcpmod]]
+    modId="power"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.tcpmod]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.tcpmod]]
+    modId="cpapi"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
