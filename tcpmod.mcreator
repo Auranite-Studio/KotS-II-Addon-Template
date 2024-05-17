@@ -382,7 +382,7 @@
     {
       "name": "WheelAbilitiesCustom",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "wheel_abilities_custom",
       "metadata": {
@@ -504,6 +504,43 @@
         ]
       },
       "path": "~/Keybinds"
+    },
+    {
+      "name": "EnhancedAbilities",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enhanced_abilities",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/EnhancedAbilitiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "ReturnStoneAfterDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_stone_after_death",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/ReturnStoneAfterDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

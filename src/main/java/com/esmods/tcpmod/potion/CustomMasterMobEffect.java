@@ -6,6 +6,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
+import com.esmods.tcpmod.procedures.ReturnStoneAfterDeathProcedure;
 import com.esmods.tcpmod.procedures.CustomMasterStartProcedure;
 import com.esmods.tcpmod.procedures.CustomMasterEndProcedure;
 
@@ -17,6 +18,11 @@ public class CustomMasterMobEffect extends MobEffect {
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		CustomMasterStartProcedure.execute(entity);
+	}
+
+	@Override
+	public void applyEffectTick(LivingEntity entity, int amplifier) {
+		ReturnStoneAfterDeathProcedure.execute(entity);
 	}
 
 	@Override

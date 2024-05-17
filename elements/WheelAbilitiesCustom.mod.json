@@ -29,12 +29,6 @@
           "name": "imagebutton_wheel_button_2",
           "image": "wheel_button_2.png",
           "hoveredImage": "wheel_button_2_highlight.png",
-          "onClick": {
-            "name": "OpenWheelTwo"
-          },
-          "displayCondition": {
-            "name": "GetWheelTwo"
-          },
           "x": 270,
           "y": 178
         }
@@ -45,12 +39,6 @@
           "name": "imagebutton_wheel_button_3",
           "image": "wheel_button_3.png",
           "hoveredImage": "wheel_button_3_highlight.png",
-          "onClick": {
-            "name": "OpenWheelThree"
-          },
-          "displayCondition": {
-            "name": "GetWheelThree"
-          },
           "x": 282,
           "y": 178
         }

@@ -19,8 +19,6 @@ import com.esmods.tcpmod.procedures.WheelKeyProcedure;
 import com.esmods.tcpmod.procedures.CustomAttack3Procedure;
 import com.esmods.tcpmod.procedures.CustomAttack2Procedure;
 import com.esmods.tcpmod.TcpmodMod;
-import com.esmods.keepersofthestonestwo.procedures.OpenWheelTwoProcedure;
-import com.esmods.keepersofthestonestwo.procedures.OpenWheelThreeProcedure;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class WheelAbilitiesCustomButtonMessage {
@@ -69,14 +67,6 @@ public class WheelAbilitiesCustomButtonMessage {
 		if (buttonID == 0) {
 
 			WheelKeyProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 1) {
-
-			OpenWheelTwoProcedure.execute();
-		}
-		if (buttonID == 2) {
-
-			OpenWheelThreeProcedure.execute();
 		}
 		if (buttonID == 4) {
 

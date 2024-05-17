@@ -16,6 +16,9 @@
     "onStarted": {
       "name": "CustomMasterStart"
     },
+    "onActiveTick": {
+      "name": "ReturnStoneAfterDeath"
+    },
     "onExpired": {
       "name": "CustomMasterEnd"
     }
