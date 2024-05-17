@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.AbstractMap;
 
 import com.esmods.tcpmod.init.TcpmodModMobEffects;
+import com.esmods.tcpmod.init.TcpmodModMenus;
 import com.esmods.tcpmod.init.TcpmodModItems;
 
 @Mod("tcpmod")
@@ -44,6 +45,7 @@ public class TcpmodMod {
 
 		TcpmodModMobEffects.REGISTRY.register(bus);
 
+		TcpmodModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

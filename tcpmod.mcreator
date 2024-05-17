@@ -328,6 +328,182 @@
         ]
       },
       "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomSpecialAttack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_special_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomSpecialAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "AbilityKey",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_key",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/AbilityKeyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "WheelAbilitiesCustom",
+      "type": "gui",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "wheel_abilities_custom",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/world/inventory/WheelAbilitiesCustomMenu.java",
+          "src/main/java/com/esmods/tcpmod/client/gui/WheelAbilitiesCustomScreen.java",
+          "src/main/java/com/esmods/tcpmod/network/WheelAbilitiesCustomButtonMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "WheelKey",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheel_key",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/WheelKeyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "CustomAttack1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_attack_1",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomAttack1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "CustomAttack2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_attack_2",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomAttack2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "CustomAttack3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_attack_3",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomAttack3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "CustomAttack4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_attack_4",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/CustomAttack4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
     }
   ],
   "variable_elements": [],
