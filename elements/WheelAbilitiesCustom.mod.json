@@ -58,6 +58,9 @@
           "name": "imagebutton_ability_1",
           "image": "ability_1.png",
           "hoveredImage": "ability_1_highlight.png",
+          "onClick": {
+            "name": "CustomAttack1"
+          },
           "x": 190,
           "y": 36
         }
@@ -86,6 +89,45 @@
           },
           "x": 190,
           "y": 158
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_custom_attack_1_uses_10",
+          "text": {
+            "fixedValue": "Custom attack 1, uses 10"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 202,
+          "y": 46
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_custom_attack_2_uses_10",
+          "text": {
+            "fixedValue": "Custom attack 2, uses 10"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 262,
+          "y": 108
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_custom_attack_3_uses_10",
+          "text": {
+            "fixedValue": "Custom attack 3, uses 10"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 200,
+          "y": 168
         }
       }
     ],

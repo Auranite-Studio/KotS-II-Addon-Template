@@ -45,6 +45,12 @@ public class WheelAbilitiesCustomScreen extends AbstractContainerScreen<WheelAbi
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (mouseX > leftPos + 84 && mouseX < leftPos + 108 && mouseY > topPos + 22 && mouseY < topPos + 46)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_1_uses_10"), mouseX, mouseY);
+		if (mouseX > leftPos + 144 && mouseX < leftPos + 168 && mouseY > topPos + 84 && mouseY < topPos + 108)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_2_uses_10"), mouseX, mouseY);
+		if (mouseX > leftPos + 82 && mouseX < leftPos + 106 && mouseY > topPos + 144 && mouseY < topPos + 168)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_3_uses_10"), mouseX, mouseY);
 	}
 
 	@Override
@@ -96,6 +102,10 @@ public class WheelAbilitiesCustomScreen extends AbstractContainerScreen<WheelAbi
 		guistate.put("button:imagebutton_wheel_button_3", imagebutton_wheel_button_3);
 		this.addRenderableWidget(imagebutton_wheel_button_3);
 		imagebutton_ability_1 = new ImageButton(this.leftPos + 72, this.topPos + 12, 46, 46, 0, 0, 46, new ResourceLocation("tcpmod:textures/screens/atlas/imagebutton_ability_1.png"), 46, 92, e -> {
+			if (true) {
+				TcpmodMod.PACKET_HANDLER.sendToServer(new WheelAbilitiesCustomButtonMessage(3, x, y, z));
+				WheelAbilitiesCustomButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_ability_1", imagebutton_ability_1);
 		this.addRenderableWidget(imagebutton_ability_1);

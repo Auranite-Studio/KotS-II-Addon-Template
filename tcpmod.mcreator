@@ -3,6 +3,7 @@
     {
       "name": "GetRechargeInfo",
       "type": "procedure",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_recharge_info",
@@ -23,6 +24,7 @@
     {
       "name": "RechargeStoneTickEvent",
       "type": "procedure",
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "recharge_stone_tick_event",
@@ -46,6 +48,7 @@
     {
       "name": "GetRechargeStoneState",
       "type": "procedure",
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_recharge_stone_state",
@@ -66,6 +69,7 @@
     {
       "name": "CustomStone",
       "type": "item",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_stone",
@@ -81,6 +85,7 @@
     {
       "name": "CustomMaster",
       "type": "potioneffect",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_master",
@@ -94,6 +99,7 @@
     {
       "name": "CustomStoneUse",
       "type": "procedure",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_stone_use",
@@ -133,6 +139,7 @@
     {
       "name": "CustomArmor",
       "type": "armor",
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor",
@@ -150,6 +157,7 @@
     {
       "name": "CustomArmorHelmetRemove",
       "type": "procedure",
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor_helmet_remove",
@@ -169,6 +177,7 @@
     {
       "name": "CustomArmorChestplateRemove",
       "type": "procedure",
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor_chestplate_remove",
@@ -188,6 +197,7 @@
     {
       "name": "CustomArmorLeggingsRemove",
       "type": "procedure",
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor_leggings_remove",
@@ -207,6 +217,7 @@
     {
       "name": "CustomArmorBootsRemove",
       "type": "procedure",
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor_boots_remove",
@@ -226,6 +237,7 @@
     {
       "name": "CustomSword",
       "type": "tool",
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_sword",
@@ -240,6 +252,7 @@
     {
       "name": "CustomSwordRemove",
       "type": "procedure",
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_sword_remove",
@@ -259,6 +272,7 @@
     {
       "name": "CustomMasterStart",
       "type": "procedure",
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_master_start",
@@ -278,6 +292,7 @@
     {
       "name": "DetransformKey",
       "type": "procedure",
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "detransform_key",
@@ -297,6 +312,7 @@
     {
       "name": "CustomMasterEnd",
       "type": "procedure",
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_master_end",
@@ -332,6 +348,7 @@
     {
       "name": "CustomSpecialAttack",
       "type": "procedure",
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_special_attack",
@@ -351,6 +368,7 @@
     {
       "name": "AbilityKey",
       "type": "procedure",
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ability_key",
@@ -382,6 +400,7 @@
     {
       "name": "WheelAbilitiesCustom",
       "type": "gui",
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheel_abilities_custom",
@@ -397,6 +416,7 @@
     {
       "name": "WheelKey",
       "type": "procedure",
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheel_key",
@@ -432,6 +452,7 @@
     {
       "name": "CustomAttack1",
       "type": "procedure",
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_attack_1",
@@ -451,6 +472,7 @@
     {
       "name": "CustomAttack2",
       "type": "procedure",
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_attack_2",
@@ -470,6 +492,7 @@
     {
       "name": "CustomAttack3",
       "type": "procedure",
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_attack_3",
@@ -489,6 +512,7 @@
     {
       "name": "CustomAttack4",
       "type": "procedure",
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_attack_4",
@@ -508,6 +532,7 @@
     {
       "name": "EnhancedAbilities",
       "type": "procedure",
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enhanced_abilities",
@@ -527,6 +552,7 @@
     {
       "name": "ReturnStoneAfterDeath",
       "type": "procedure",
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "return_stone_after_death",
@@ -541,6 +567,17 @@
           }
         ]
       }
+    },
+    {
+      "name": "CustomStones",
+      "type": "tab",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_stones",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
@@ -550,10 +587,14 @@
     "en_us": {
       "item.tcpmod.custom_armor_boots": "Custom Boots",
       "item.tcpmod.custom_stone": "Custom Stone",
+      "item_group.tcpmod.custom_stones": "Custom: Stones",
+      "gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_2_uses_10": "Custom attack 2, uses 10",
       "effect.tcpmod.custom_master": "Custom Master",
       "item.tcpmod.custom_armor_chestplate": "Custom Chestplate",
+      "gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
       "item.tcpmod.custom_armor_helmet": "Custom Helmet",
       "item.tcpmod.custom_sword": "Custom Sword",
+      "gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.tcpmod.custom_armor_leggings": "Custom Leggings"
     }
   },

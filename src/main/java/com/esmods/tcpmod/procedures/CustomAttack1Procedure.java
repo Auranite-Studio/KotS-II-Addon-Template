@@ -1,5 +1,6 @@
 package com.esmods.tcpmod.procedures;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
@@ -15,5 +16,7 @@ public class CustomAttack1Procedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }

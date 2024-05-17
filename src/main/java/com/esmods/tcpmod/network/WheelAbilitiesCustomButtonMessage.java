@@ -18,6 +18,7 @@ import com.esmods.tcpmod.world.inventory.WheelAbilitiesCustomMenu;
 import com.esmods.tcpmod.procedures.WheelKeyProcedure;
 import com.esmods.tcpmod.procedures.CustomAttack3Procedure;
 import com.esmods.tcpmod.procedures.CustomAttack2Procedure;
+import com.esmods.tcpmod.procedures.CustomAttack1Procedure;
 import com.esmods.tcpmod.TcpmodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -67,6 +68,10 @@ public class WheelAbilitiesCustomButtonMessage {
 		if (buttonID == 0) {
 
 			WheelKeyProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 3) {
+
+			CustomAttack1Procedure.execute(entity);
 		}
 		if (buttonID == 4) {
 

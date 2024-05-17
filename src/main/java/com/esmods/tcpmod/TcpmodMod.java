@@ -26,6 +26,7 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
+import com.esmods.tcpmod.init.TcpmodModTabs;
 import com.esmods.tcpmod.init.TcpmodModMobEffects;
 import com.esmods.tcpmod.init.TcpmodModMenus;
 import com.esmods.tcpmod.init.TcpmodModItems;
@@ -42,6 +43,8 @@ public class TcpmodMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		TcpmodModItems.REGISTRY.register(bus);
+
+		TcpmodModTabs.REGISTRY.register(bus);
 
 		TcpmodModMobEffects.REGISTRY.register(bus);
 
