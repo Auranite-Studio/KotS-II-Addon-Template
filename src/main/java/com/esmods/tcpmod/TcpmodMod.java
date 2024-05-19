@@ -37,8 +37,6 @@ public class TcpmodMod {
 	public static final String MODID = "tcpmod";
 
 	public TcpmodMod() {
-		// Start of user code block mod constructor
-		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 

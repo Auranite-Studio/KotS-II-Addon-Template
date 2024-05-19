@@ -4,7 +4,7 @@
   "definition": {
     "name": "Custom: Stones",
     "icon": {
-      "value": "PowerModItems.TELEPORTATION_STONE"
+      "value": "CUSTOM:CustomStone"
     },
     "showSearch": false
   }

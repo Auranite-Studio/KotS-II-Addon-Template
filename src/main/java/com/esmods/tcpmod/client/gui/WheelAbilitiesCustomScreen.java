@@ -14,6 +14,8 @@ import java.util.HashMap;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 import com.esmods.tcpmod.world.inventory.WheelAbilitiesCustomMenu;
+import com.esmods.tcpmod.procedures.GetWheelTwoProcedure;
+import com.esmods.tcpmod.procedures.GetWheelThreeProcedure;
 import com.esmods.tcpmod.network.WheelAbilitiesCustomButtonMessage;
 import com.esmods.tcpmod.TcpmodMod;
 
@@ -86,19 +88,45 @@ public class WheelAbilitiesCustomScreen extends AbstractContainerScreen<WheelAbi
 	public void init() {
 		super.init();
 		imagebutton_wheel_button_1 = new ImageButton(this.leftPos + 140, this.topPos + 154, 10, 7, 0, 0, 7, new ResourceLocation("tcpmod:textures/screens/atlas/imagebutton_wheel_button_1.png"), 10, 14, e -> {
-			if (true) {
+			if (GetWheelTwoProcedure.execute(entity)) {
 				TcpmodMod.PACKET_HANDLER.sendToServer(new WheelAbilitiesCustomButtonMessage(0, x, y, z));
 				WheelAbilitiesCustomButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		});
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (GetWheelTwoProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
 		guistate.put("button:imagebutton_wheel_button_1", imagebutton_wheel_button_1);
 		this.addRenderableWidget(imagebutton_wheel_button_1);
 		imagebutton_wheel_button_2 = new ImageButton(this.leftPos + 152, this.topPos + 154, 10, 7, 0, 0, 7, new ResourceLocation("tcpmod:textures/screens/atlas/imagebutton_wheel_button_2.png"), 10, 14, e -> {
-		});
+			if (GetWheelTwoProcedure.execute(entity)) {
+				TcpmodMod.PACKET_HANDLER.sendToServer(new WheelAbilitiesCustomButtonMessage(1, x, y, z));
+				WheelAbilitiesCustomButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (GetWheelTwoProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
 		guistate.put("button:imagebutton_wheel_button_2", imagebutton_wheel_button_2);
 		this.addRenderableWidget(imagebutton_wheel_button_2);
 		imagebutton_wheel_button_3 = new ImageButton(this.leftPos + 164, this.topPos + 154, 10, 7, 0, 0, 7, new ResourceLocation("tcpmod:textures/screens/atlas/imagebutton_wheel_button_3.png"), 10, 14, e -> {
-		});
+			if (GetWheelThreeProcedure.execute(entity)) {
+				TcpmodMod.PACKET_HANDLER.sendToServer(new WheelAbilitiesCustomButtonMessage(2, x, y, z));
+				WheelAbilitiesCustomButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (GetWheelThreeProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
 		guistate.put("button:imagebutton_wheel_button_3", imagebutton_wheel_button_3);
 		this.addRenderableWidget(imagebutton_wheel_button_3);
 		imagebutton_ability_1 = new ImageButton(this.leftPos + 72, this.topPos + 12, 46, 46, 0, 0, 46, new ResourceLocation("tcpmod:textures/screens/atlas/imagebutton_ability_1.png"), 46, 92, e -> {

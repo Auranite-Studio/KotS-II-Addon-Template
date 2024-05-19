@@ -146,9 +146,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/tcpmod/models/item/custom_armor_leggings.json",
-          "src/main/resources/assets/tcpmod/models/item/custom_armor_chestplate.json",
           "src/main/resources/assets/tcpmod/models/item/custom_armor_boots.json",
           "src/main/java/com/esmods/tcpmod/item/CustomArmorItem.java",
+          "src/main/resources/assets/tcpmod/models/item/custom_armor_chestplate.json",
           "src/main/resources/assets/tcpmod/models/item/custom_armor_helmet.json"
         ]
       },
@@ -243,8 +243,8 @@
       "registry_name": "custom_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/tcpmod/models/item/custom_sword.json",
-          "src/main/java/com/esmods/tcpmod/item/CustomSwordItem.java"
+          "src/main/java/com/esmods/tcpmod/item/CustomSwordItem.java",
+          "src/main/resources/assets/tcpmod/models/item/custom_sword.json"
         ]
       },
       "path": "~/CustomStone"
@@ -363,7 +363,7 @@
           }
         ]
       },
-      "path": "~/Keybinds"
+      "path": "~/CustomStone"
     },
     {
       "name": "AbilityKey",
@@ -411,7 +411,7 @@
           "src/main/java/com/esmods/tcpmod/network/WheelAbilitiesCustomButtonMessage.java"
         ]
       },
-      "path": "~/Keybinds"
+      "path": "~/CustomStone"
     },
     {
       "name": "WheelKey",
@@ -467,7 +467,7 @@
           }
         ]
       },
-      "path": "~/Keybinds"
+      "path": "~/CustomStone"
     },
     {
       "name": "CustomAttack2",
@@ -487,7 +487,7 @@
           }
         ]
       },
-      "path": "~/Keybinds"
+      "path": "~/CustomStone"
     },
     {
       "name": "CustomAttack3",
@@ -507,7 +507,7 @@
           }
         ]
       },
-      "path": "~/Keybinds"
+      "path": "~/CustomStone"
     },
     {
       "name": "CustomAttack4",
@@ -527,7 +527,7 @@
           }
         ]
       },
-      "path": "~/Keybinds"
+      "path": "~/CustomStone"
     },
     {
       "name": "EnhancedAbilities",
@@ -546,8 +546,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/CustomStone"
+      }
     },
     {
       "name": "ReturnStoneAfterDeath",
@@ -578,6 +577,180 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "WhenOpenSecondWheel",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_open_second_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/WhenOpenSecondWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "OpenThirdWheelAbility",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_third_wheel_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/OpenThirdWheelAbilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "OpenFirstWheel",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_first_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/OpenFirstWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "OpenSecondWheel",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_second_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/OpenSecondWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "OpenThirdWheel",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_third_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/OpenThirdWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "GetWheelTwo",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_wheel_two",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/GetWheelTwoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "GetWheelThree",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_wheel_three",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/esmods/tcpmod/procedures/GetWheelThreeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
     }
   ],
   "variable_elements": [],
@@ -636,5 +809,5 @@
     "credits": "TEMPLATE",
     "modElementsPackage": "com.esmods.tcpmod"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400199999
 }

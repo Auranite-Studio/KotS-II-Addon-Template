@@ -15,7 +15,9 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 import com.esmods.tcpmod.world.inventory.WheelAbilitiesCustomMenu;
-import com.esmods.tcpmod.procedures.WheelKeyProcedure;
+import com.esmods.tcpmod.procedures.OpenThirdWheelProcedure;
+import com.esmods.tcpmod.procedures.OpenSecondWheelProcedure;
+import com.esmods.tcpmod.procedures.OpenFirstWheelProcedure;
 import com.esmods.tcpmod.procedures.CustomAttack3Procedure;
 import com.esmods.tcpmod.procedures.CustomAttack2Procedure;
 import com.esmods.tcpmod.procedures.CustomAttack1Procedure;
@@ -67,7 +69,15 @@ public class WheelAbilitiesCustomButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			WheelKeyProcedure.execute(world, x, y, z, entity);
+			OpenFirstWheelProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			OpenSecondWheelProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			OpenThirdWheelProcedure.execute(entity);
 		}
 		if (buttonID == 3) {
 
