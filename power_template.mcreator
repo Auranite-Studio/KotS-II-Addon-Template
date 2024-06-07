@@ -75,9 +75,9 @@
       "registry_name": "custom_stone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/power_template/models/item/custom_stone.json",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomStoneItem.java",
-          "src/main/resources/assets/power_template/models/item/custom_stone_0.json"
+          "src/main/resources/assets/power_template/models/item/custom_stone_0.json",
+          "src/main/resources/assets/power_template/models/item/custom_stone.json"
         ]
       },
       "path": "~/CustomStone"
@@ -145,11 +145,11 @@
       "registry_name": "custom_armor",
       "metadata": {
         "files": [
+          "src/main/resources/assets/power_template/models/item/custom_armor_chestplate.json",
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomArmorItem.java",
           "src/main/resources/assets/power_template/models/item/custom_armor_leggings.json",
           "src/main/resources/assets/power_template/models/item/custom_armor_boots.json",
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomArmorItem.java",
-          "src/main/resources/assets/power_template/models/item/custom_armor_helmet.json",
-          "src/main/resources/assets/power_template/models/item/custom_armor_chestplate.json"
+          "src/main/resources/assets/power_template/models/item/custom_armor_helmet.json"
         ]
       },
       "path": "~/CustomStone"
@@ -243,8 +243,8 @@
       "registry_name": "custom_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/power_template/models/item/custom_sword.json",
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomSwordItem.java"
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomSwordItem.java",
+          "src/main/resources/assets/power_template/models/item/custom_sword.json"
         ]
       },
       "path": "~/CustomStone"
@@ -406,9 +406,9 @@
       "registry_name": "wheel_abilities_custom",
       "metadata": {
         "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/world/inventory/WheelAbilitiesCustomMenu.java",
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/client/gui/WheelAbilitiesCustomScreen.java",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/network/WheelAbilitiesCustomButtonMessage.java",
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/client/gui/WheelAbilitiesCustomScreen.java"
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/world/inventory/WheelAbilitiesCustomMenu.java"
         ]
       },
       "path": "~/CustomStone"
@@ -556,9 +556,6 @@
       "locked_code": false,
       "registry_name": "return_stone_after_death",
       "metadata": {
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/ReturnStoneAfterDeathProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -751,6 +748,258 @@
         ]
       },
       "path": "~/Keybinds"
+    },
+    {
+      "name": "GetWheelTwoOrFirstFake",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_wheel_two_or_first_fake",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/GetWheelTwoOrFirstFakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "GetFakeWheelOne",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_fake_wheel_one",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/GetFakeWheelOneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "GetFakeWheelTwo",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_fake_wheel_two",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/GetFakeWheelTwoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "GetFakeWheelThree",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_fake_wheel_three",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/GetFakeWheelThreeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "WhenOpenFirstFakeWheel",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_open_first_fake_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/WhenOpenFirstFakeWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "WhenOpenSecondFakeWheel",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_open_second_fake_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/WhenOpenSecondFakeWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "WhenOpenThirdFakeWheel",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_open_third_fake_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/WhenOpenThirdFakeWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "OpenFirstFakeWheel",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_first_fake_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/OpenFirstFakeWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "OpenSecondFakeWheel",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_second_fake_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/OpenSecondFakeWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "OpenThirdFakeWheel",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_third_fake_wheel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/OpenThirdFakeWheelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds"
     }
   ],
   "variable_elements": [],
@@ -802,7 +1051,7 @@
   "workspaceSettings": {
     "modid": "power_template",
     "modName": "KotS II: Addon Template",
-    "version": "7",
+    "version": "8",
     "description": "This is template workspace for creating custom stones  ",
     "author": "Environment Studios",
     "websiteURL": "https://mcreator.net",

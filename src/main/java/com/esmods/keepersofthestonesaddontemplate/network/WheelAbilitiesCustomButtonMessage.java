@@ -16,8 +16,11 @@ import java.util.HashMap;
 
 import com.esmods.keepersofthestonesaddontemplate.world.inventory.WheelAbilitiesCustomMenu;
 import com.esmods.keepersofthestonesaddontemplate.procedures.OpenThirdWheelProcedure;
+import com.esmods.keepersofthestonesaddontemplate.procedures.OpenThirdFakeWheelProcedure;
 import com.esmods.keepersofthestonesaddontemplate.procedures.OpenSecondWheelProcedure;
+import com.esmods.keepersofthestonesaddontemplate.procedures.OpenSecondFakeWheelProcedure;
 import com.esmods.keepersofthestonesaddontemplate.procedures.OpenFirstWheelProcedure;
+import com.esmods.keepersofthestonesaddontemplate.procedures.OpenFirstFakeWheelProcedure;
 import com.esmods.keepersofthestonesaddontemplate.procedures.CustomAttack3Procedure;
 import com.esmods.keepersofthestonesaddontemplate.procedures.CustomAttack2Procedure;
 import com.esmods.keepersofthestonesaddontemplate.procedures.CustomAttack1Procedure;
@@ -90,6 +93,18 @@ public class WheelAbilitiesCustomButtonMessage {
 		if (buttonID == 5) {
 
 			CustomAttack3Procedure.execute(entity);
+		}
+		if (buttonID == 6) {
+
+			OpenFirstFakeWheelProcedure.execute(entity);
+		}
+		if (buttonID == 7) {
+
+			OpenSecondFakeWheelProcedure.execute(entity);
+		}
+		if (buttonID == 8) {
+
+			OpenThirdFakeWheelProcedure.execute(entity);
 		}
 	}
 
