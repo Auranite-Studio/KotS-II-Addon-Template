@@ -17,7 +17,7 @@
       "name": "CustomMasterStart"
     },
     "onActiveTick": {
-      "name": "ReturnStoneAfterDeath"
+      "name": "EnhancedAbilities"
     },
     "onExpired": {
       "name": "CustomMasterEnd"

@@ -31,11 +31,11 @@ public class DetransformKeyProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		PowerTemplateMod.queueServerWork(1, () -> {
-			if (entity.getData(PowerModVariables.PLAYER_VARIABLES).detransf_key_var) {
+		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).detransf_key_var) {
+			PowerTemplateMod.queueServerWork(1, () -> {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PowerTemplateModMobEffects.CUSTOM_MASTER.get());
-			}
-		});
+			});
+		}
 	}
 }

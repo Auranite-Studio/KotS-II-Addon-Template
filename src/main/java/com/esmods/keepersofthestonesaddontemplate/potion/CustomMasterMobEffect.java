@@ -5,7 +5,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
-import com.esmods.keepersofthestonesaddontemplate.procedures.ReturnStoneAfterDeathProcedure;
+import com.esmods.keepersofthestonesaddontemplate.procedures.EnhancedAbilitiesProcedure;
 import com.esmods.keepersofthestonesaddontemplate.procedures.CustomMasterStartProcedure;
 
 public class CustomMasterMobEffect extends MobEffect {
@@ -25,6 +25,6 @@ public class CustomMasterMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		ReturnStoneAfterDeathProcedure.execute(entity);
+		EnhancedAbilitiesProcedure.execute(entity);
 	}
 }
