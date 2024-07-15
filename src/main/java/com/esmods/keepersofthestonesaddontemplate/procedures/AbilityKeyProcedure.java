@@ -1,9 +1,9 @@
 package com.esmods.keepersofthestonesaddontemplate.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -29,8 +29,8 @@ public class AbilityKeyProcedure {
 	private static void execute(@Nullable Event event, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).use_ability_key_var) {
-			if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).ability_block == false) {
+		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).use_ability_key_var) {
+			if (entity.getData(PowerModVariables.PLAYER_VARIABLES).ability_block == false) {
 				if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PowerTemplateModMobEffects.CUSTOM_MASTER.get())) {
 					CustomSpecialAttackProcedure.execute(entity);
 				}

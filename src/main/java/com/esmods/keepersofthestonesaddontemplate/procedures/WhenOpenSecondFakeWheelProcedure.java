@@ -1,10 +1,9 @@
 package com.esmods.keepersofthestonesaddontemplate.procedures;
 
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -40,11 +39,11 @@ public class WhenOpenSecondFakeWheelProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).second_fake_wheel_open_var) {
-			if (((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).fake_element_name_second).equals("custom")) {
+		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).second_fake_wheel_open_var) {
+			if ((entity.getData(PowerModVariables.PLAYER_VARIABLES).fake_element_name_second).equals("custom")) {
 				if (entity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = BlockPos.containing(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+					_ent.openMenu(new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
 							return Component.literal("WheelAbilitiesCustom");

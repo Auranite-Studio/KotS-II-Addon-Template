@@ -1,9 +1,9 @@
 package com.esmods.keepersofthestonesaddontemplate.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -29,7 +29,7 @@ public class DetransformKeyProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).detransf_key_var) {
+		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).detransf_key_var) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(PowerTemplateModMobEffects.CUSTOM_MASTER.get());
 		}

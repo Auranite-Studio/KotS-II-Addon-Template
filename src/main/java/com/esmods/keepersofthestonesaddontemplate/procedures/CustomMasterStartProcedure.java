@@ -16,13 +16,11 @@ public class CustomMasterStartProcedure {
 		if (entity == null)
 			return;
 		{
-			boolean _setval = true;
-			entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.active = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
+			_vars.active = true;
+			_vars.syncPlayerVariables(entity);
 		}
-		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).mergers == 0) {
+		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).mergers == 0) {
 			{
 				Entity _entity = entity;
 				if (_entity instanceof Player _player) {
@@ -68,13 +66,11 @@ public class CustomMasterStartProcedure {
 			(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).enchant(Enchantments.BINDING_CURSE, 1);
 			(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).enchant(Enchantments.VANISHING_CURSE, 1);
 			{
-				String _setval = "custom";
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.element_name_first = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
+				_vars.element_name_first = "custom";
+				_vars.syncPlayerVariables(entity);
 			}
-		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).mergers == 1) {
+		} else if (entity.getData(PowerModVariables.PLAYER_VARIABLES).mergers == 1) {
 			{
 				Entity _entity = entity;
 				if (_entity instanceof Player _player) {
@@ -98,13 +94,11 @@ public class CustomMasterStartProcedure {
 			(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).enchant(Enchantments.BINDING_CURSE, 1);
 			(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).enchant(Enchantments.VANISHING_CURSE, 1);
 			{
-				String _setval = "custom";
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.element_name_second = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
+				_vars.element_name_second = "custom";
+				_vars.syncPlayerVariables(entity);
 			}
-		} else if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).mergers == 2) {
+		} else if (entity.getData(PowerModVariables.PLAYER_VARIABLES).mergers == 2) {
 			{
 				Entity _entity = entity;
 				if (_entity instanceof Player _player) {
@@ -117,11 +111,9 @@ public class CustomMasterStartProcedure {
 			(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).enchant(Enchantments.BINDING_CURSE, 1);
 			(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).enchant(Enchantments.VANISHING_CURSE, 1);
 			{
-				String _setval = "custom";
-				entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.element_name_third = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
+				_vars.element_name_third = "custom";
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 		if (entity instanceof LivingEntity _entity) {

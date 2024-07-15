@@ -353,9 +353,6 @@
       "locked_code": false,
       "registry_name": "custom_special_attack",
       "metadata": {
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomSpecialAttackProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -556,6 +553,9 @@
       "locked_code": false,
       "registry_name": "return_stone_after_death",
       "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/ReturnStoneAfterDeathProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1064,11 +1064,12 @@
     "dependants": [],
     "mcreatorDependencies": [
       "geckolib",
-      "cpapi"
+      "cpapi",
+      "playeranimator"
     ],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.20.4",
     "credits": "Created by Environment Studios",
     "modElementsPackage": "com.esmods.keepersofthestonesaddontemplate"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400199999
 }
