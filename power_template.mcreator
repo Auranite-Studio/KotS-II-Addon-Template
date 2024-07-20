@@ -115,22 +115,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -357,6 +341,9 @@
       "locked_code": false,
       "registry_name": "custom_special_attack",
       "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomSpecialAttackProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
