@@ -21,6 +21,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 import com.esmods.keepersofthestonesaddontemplate.procedures.GetRechargeStoneStateProcedure;
 import com.esmods.keepersofthestonesaddontemplate.item.CustomSwordItem;
 import com.esmods.keepersofthestonesaddontemplate.item.CustomStoneItem;
+import com.esmods.keepersofthestonesaddontemplate.item.CustomBatteryItem;
 import com.esmods.keepersofthestonesaddontemplate.item.CustomArmorItem;
 import com.esmods.keepersofthestonesaddontemplate.PowerTemplateMod;
 
@@ -32,6 +33,7 @@ public class PowerTemplateModItems {
 	public static final DeferredHolder<Item, Item> CUSTOM_ARMOR_LEGGINGS = REGISTRY.register("custom_armor_leggings", () -> new CustomArmorItem.Leggings());
 	public static final DeferredHolder<Item, Item> CUSTOM_ARMOR_BOOTS = REGISTRY.register("custom_armor_boots", () -> new CustomArmorItem.Boots());
 	public static final DeferredHolder<Item, Item> CUSTOM_SWORD = REGISTRY.register("custom_sword", () -> new CustomSwordItem());
+	public static final DeferredHolder<Item, Item> CUSTOM_BATTERY = REGISTRY.register("custom_battery", () -> new CustomBatteryItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

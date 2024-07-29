@@ -75,9 +75,9 @@
       "registry_name": "custom_stone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/power_template/models/item/custom_stone.json",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomStoneItem.java",
-          "src/main/resources/assets/power_template/models/item/custom_stone_0.json",
-          "src/main/resources/assets/power_template/models/item/custom_stone.json"
+          "src/main/resources/assets/power_template/models/item/custom_stone_0.json"
         ]
       },
       "path": "~/CustomStone"
@@ -991,35 +991,115 @@
         ]
       },
       "path": "~/Keybinds"
+    },
+    {
+      "name": "CustomBattery",
+      "type": "item",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_battery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/power_template/models/item/custom_battery.json",
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomBatteryItem.java"
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomBatteryUse",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_battery_use",
+      "metadata": {
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomBatteryUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomBatteryDesc",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_battery_desc",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomBatteryDescProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/CustomStone"
+    },
+    {
+      "name": "CustomBatteries",
+      "type": "tab",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_batteries",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:power:elemental_stones": [
+      "CUSTOM:CustomStone"
+    ],
+    "ITEMS:power:elemental_batteries": [
+      "CUSTOM:CustomBattery"
+    ]
+  },
   "language_map": {
     "en_us": {
       "gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_2_uses_10": "Custom attack 2, uses 10",
-      "item.power_template.custom_sword": "Custom Sword",
       "item_group.power_template.custom_stones": "Custom: Stones",
       "effect.tcpmod.custom_master": "Custom Master",
-      "item.power_template.custom_armor_boots": "Custom Boots",
       "item.tcpmod.custom_armor_chestplate": "Custom Chestplate",
       "item.power_template.custom_armor_chestplate": "Custom Chestplate",
-      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.tcpmod.custom_armor_helmet": "Custom Helmet",
       "gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.tcpmod.custom_armor_leggings": "Custom Leggings",
+      "item_group.power_template.custom_batteries": "Custom: Batteries",
+      "item.power_template.custom_armor_helmet": "Custom Helmet",
+      "battery.desc.custom": "Custom",
+      "item.power_template.custom_stone": "Custom Stone",
+      "item.tcpmod.custom_sword": "Custom Sword",
+      "item.power_template.custom_sword": "Custom Sword",
+      "item.power_template.custom_armor_boots": "Custom Boots",
+      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
+      "item.power_template.custom_battery": "Battery",
       "item.tcpmod.custom_armor_boots": "Custom Boots",
       "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
-      "item.tcpmod.custom_stone": "Custom Stone",
       "item_group.tcpmod.custom_stones": "Custom: Stones",
-      "item.power_template.custom_armor_helmet": "Custom Helmet",
+      "item.tcpmod.custom_stone": "Custom Stone",
       "item.power_template.custom_armor_leggings": "Custom Leggings",
       "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_2_uses_10": "Custom attack 2, uses 10",
-      "gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
       "effect.power_template.custom_master": "Custom Master",
-      "item.power_template.custom_stone": "Custom Stone",
-      "item.tcpmod.custom_sword": "Custom Sword"
+      "gui.tcpmod.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10"
     }
   },
   "foldersRoot": {
