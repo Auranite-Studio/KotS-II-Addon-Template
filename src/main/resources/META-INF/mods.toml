@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="power_template"
-version="8"
+version="11"
 displayName="KotS II: Addon Template"
 displayURL="https://mcreator.net"
 credits="Created by Environment Studios"
