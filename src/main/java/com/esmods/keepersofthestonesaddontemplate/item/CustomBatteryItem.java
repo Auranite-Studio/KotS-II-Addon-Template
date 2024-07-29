@@ -19,7 +19,7 @@ import com.esmods.keepersofthestonesaddontemplate.procedures.CustomBatteryDescPr
 
 public class CustomBatteryItem extends Item {
 	public CustomBatteryItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override
