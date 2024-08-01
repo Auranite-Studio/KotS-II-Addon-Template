@@ -22,4 +22,10 @@ public class PowerTemplateModTabs {
 			})
 
 					.build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CUSTOM_BATTERIES = REGISTRY.register("custom_batteries",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.power_template.custom_batteries")).icon(() -> new ItemStack(PowerTemplateModItems.CUSTOM_BATTERY.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(PowerTemplateModItems.CUSTOM_BATTERY.get());
+			})
+
+					.build());
 }
