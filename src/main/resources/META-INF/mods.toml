@@ -36,6 +36,12 @@ description="This is template workspace for creating custom stones  "
     side="BOTH"
 
 [[dependencies.power_template]]
+    modId="pehkui"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.power_template]]
     modId="geckolib"
     type="optional"
     versionRange="[0,)"

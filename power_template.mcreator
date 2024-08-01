@@ -1123,6 +1123,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "pehkui",
       "geckolib",
       "cpapi",
       "playeranimator"
