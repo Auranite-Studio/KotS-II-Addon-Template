@@ -36,6 +36,8 @@ public class PowerTemplateMod {
 	public static final String MODID = "power_template";
 
 	public PowerTemplateMod(IEventBus modEventBus) {
+		// Start of user code block mod constructor
+		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 
