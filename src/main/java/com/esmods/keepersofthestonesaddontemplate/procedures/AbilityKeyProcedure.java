@@ -18,15 +18,15 @@ public class AbilityKeyProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
+			execute(event, event.player);
 		}
 	}
 
-	public static void execute(double x, double y, double z, Entity entity) {
-		execute(null, x, y, z, entity);
+	public static void execute(Entity entity) {
+		execute(null, entity);
 	}
 
-	private static void execute(@Nullable Event event, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).use_ability_key_var) {

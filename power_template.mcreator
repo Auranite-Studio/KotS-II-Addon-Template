@@ -3,7 +3,6 @@
     {
       "name": "GetRechargeInfo",
       "type": "procedure",
-      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_recharge_info",
@@ -24,7 +23,6 @@
     {
       "name": "RechargeStoneTickEvent",
       "type": "procedure",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "recharge_stone_tick_event",
@@ -48,7 +46,6 @@
     {
       "name": "GetRechargeStoneState",
       "type": "procedure",
-      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_recharge_stone_state",
@@ -69,15 +66,14 @@
     {
       "name": "CustomStone",
       "type": "item",
-      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_stone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/power_template/models/item/custom_stone.json",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomStoneItem.java",
-          "src/main/resources/assets/power_template/models/item/custom_stone_0.json",
-          "src/main/resources/assets/power_template/models/item/custom_stone.json"
+          "src/main/resources/assets/power_template/models/item/custom_stone_0.json"
         ]
       },
       "path": "~/CustomStone"
@@ -85,7 +81,6 @@
     {
       "name": "CustomMaster",
       "type": "potioneffect",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_master",
@@ -99,8 +94,7 @@
     {
       "name": "CustomStoneUse",
       "type": "procedure",
-      "sortid": 6,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "custom_stone_use",
       "metadata": {
@@ -123,17 +117,16 @@
     {
       "name": "CustomArmor",
       "type": "armor",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/power_template/models/item/custom_armor_chestplate.json",
+          "src/main/resources/assets/power_template/models/item/custom_armor_helmet.json",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomArmorItem.java",
+          "src/main/resources/assets/power_template/models/item/custom_armor_chestplate.json",
           "src/main/resources/assets/power_template/models/item/custom_armor_leggings.json",
-          "src/main/resources/assets/power_template/models/item/custom_armor_boots.json",
-          "src/main/resources/assets/power_template/models/item/custom_armor_helmet.json"
+          "src/main/resources/assets/power_template/models/item/custom_armor_boots.json"
         ]
       },
       "path": "~/CustomStone"
@@ -141,7 +134,6 @@
     {
       "name": "CustomArmorHelmetRemove",
       "type": "procedure",
-      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor_helmet_remove",
@@ -161,7 +153,6 @@
     {
       "name": "CustomArmorChestplateRemove",
       "type": "procedure",
-      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor_chestplate_remove",
@@ -181,7 +172,6 @@
     {
       "name": "CustomArmorLeggingsRemove",
       "type": "procedure",
-      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor_leggings_remove",
@@ -201,7 +191,6 @@
     {
       "name": "CustomArmorBootsRemove",
       "type": "procedure",
-      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_armor_boots_remove",
@@ -221,7 +210,6 @@
     {
       "name": "CustomSword",
       "type": "tool",
-      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_sword",
@@ -236,7 +224,6 @@
     {
       "name": "CustomSwordRemove",
       "type": "procedure",
-      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_sword_remove",
@@ -256,7 +243,6 @@
     {
       "name": "CustomMasterStart",
       "type": "procedure",
-      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_master_start",
@@ -276,7 +262,6 @@
     {
       "name": "DetransformKey",
       "type": "procedure",
-      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "detransform_key",
@@ -300,8 +285,7 @@
     {
       "name": "CustomMasterEnd",
       "type": "procedure",
-      "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "custom_master_end",
       "metadata": {
@@ -336,7 +320,6 @@
     {
       "name": "CustomSpecialAttack",
       "type": "procedure",
-      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_special_attack",
@@ -356,7 +339,6 @@
     {
       "name": "AbilityKey",
       "type": "procedure",
-      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ability_key",
@@ -368,18 +350,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           }
         ]
       },
@@ -388,15 +358,14 @@
     {
       "name": "WheelAbilitiesCustom",
       "type": "gui",
-      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheel_abilities_custom",
       "metadata": {
         "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/client/gui/WheelAbilitiesCustomScreen.java",
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/world/inventory/WheelAbilitiesCustomMenu.java",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/network/WheelAbilitiesCustomButtonMessage.java",
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/world/inventory/WheelAbilitiesCustomMenu.java"
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/client/gui/WheelAbilitiesCustomScreen.java"
         ]
       },
       "path": "~/CustomStone"
@@ -404,7 +373,6 @@
     {
       "name": "WheelKey",
       "type": "procedure",
-      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wheel_key",
@@ -440,7 +408,6 @@
     {
       "name": "CustomAttack1",
       "type": "procedure",
-      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_attack_1",
@@ -460,7 +427,6 @@
     {
       "name": "CustomAttack2",
       "type": "procedure",
-      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_attack_2",
@@ -480,7 +446,6 @@
     {
       "name": "CustomAttack3",
       "type": "procedure",
-      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_attack_3",
@@ -500,7 +465,6 @@
     {
       "name": "CustomAttack4",
       "type": "procedure",
-      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_attack_4",
@@ -520,7 +484,6 @@
     {
       "name": "EnhancedAbilities",
       "type": "procedure",
-      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enhanced_abilities",
@@ -539,7 +502,6 @@
     {
       "name": "ReturnStoneAfterDeath",
       "type": "procedure",
-      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "return_stone_after_death",
@@ -558,7 +520,6 @@
     {
       "name": "CustomStones",
       "type": "tab",
-      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_stones",
@@ -569,7 +530,6 @@
     {
       "name": "WhenOpenSecondWheel",
       "type": "procedure",
-      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "when_open_second_wheel",
@@ -605,7 +565,6 @@
     {
       "name": "OpenThirdWheelAbility",
       "type": "procedure",
-      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_third_wheel_ability",
@@ -641,7 +600,6 @@
     {
       "name": "OpenFirstWheel",
       "type": "procedure",
-      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_first_wheel",
@@ -661,7 +619,6 @@
     {
       "name": "OpenSecondWheel",
       "type": "procedure",
-      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_second_wheel",
@@ -681,7 +638,6 @@
     {
       "name": "OpenThirdWheel",
       "type": "procedure",
-      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_third_wheel",
@@ -701,7 +657,6 @@
     {
       "name": "GetWheelTwo",
       "type": "procedure",
-      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_wheel_two",
@@ -722,7 +677,6 @@
     {
       "name": "GetWheelThree",
       "type": "procedure",
-      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_wheel_three",
@@ -743,7 +697,6 @@
     {
       "name": "GetWheelTwoOrFirstFake",
       "type": "procedure",
-      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_wheel_two_or_first_fake",
@@ -764,7 +717,6 @@
     {
       "name": "GetFakeWheelOne",
       "type": "procedure",
-      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_fake_wheel_one",
@@ -785,7 +737,6 @@
     {
       "name": "GetFakeWheelTwo",
       "type": "procedure",
-      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_fake_wheel_two",
@@ -806,7 +757,6 @@
     {
       "name": "GetFakeWheelThree",
       "type": "procedure",
-      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_fake_wheel_three",
@@ -827,7 +777,6 @@
     {
       "name": "WhenOpenFirstFakeWheel",
       "type": "procedure",
-      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "when_open_first_fake_wheel",
@@ -863,7 +812,6 @@
     {
       "name": "WhenOpenSecondFakeWheel",
       "type": "procedure",
-      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "when_open_second_fake_wheel",
@@ -899,7 +847,6 @@
     {
       "name": "WhenOpenThirdFakeWheel",
       "type": "procedure",
-      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "when_open_third_fake_wheel",
@@ -935,7 +882,6 @@
     {
       "name": "OpenFirstFakeWheel",
       "type": "procedure",
-      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_first_fake_wheel",
@@ -955,7 +901,6 @@
     {
       "name": "OpenSecondFakeWheel",
       "type": "procedure",
-      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_second_fake_wheel",
@@ -975,7 +920,6 @@
     {
       "name": "OpenThirdFakeWheel",
       "type": "procedure",
-      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "open_third_fake_wheel",
@@ -995,7 +939,6 @@
     {
       "name": "CustomBattery",
       "type": "item",
-      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_battery",
@@ -1010,8 +953,7 @@
     {
       "name": "CustomBatteryUse",
       "type": "procedure",
-      "sortid": 46,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "custom_battery_use",
       "metadata": {
@@ -1038,7 +980,6 @@
     {
       "name": "CustomBatteryDesc",
       "type": "procedure",
-      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_battery_desc",
@@ -1054,7 +995,6 @@
     {
       "name": "CustomBatteries",
       "type": "tab",
-      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "custom_batteries",
@@ -1071,8 +1011,12 @@
     ],
     "ITEMS:power:elemental_batteries": [
       "CUSTOM:CustomBattery"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:CustomSword"
     ]
   },
+  "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.power_template.custom_sword": "Custom Sword",
@@ -1111,7 +1055,7 @@
   "workspaceSettings": {
     "modid": "power_template",
     "modName": "Keepers of the Stones II: Addon Template",
-    "version": "11",
+    "version": "12",
     "description": "This is template workspace for creating custom stones  ",
     "author": "Environment Studios",
     "websiteURL": "https://mcreator.net",
@@ -1132,5 +1076,5 @@
     "credits": "Created by Environment Studios",
     "modElementsPackage": "com.esmods.keepersofthestonesaddontemplate"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400299999
 }

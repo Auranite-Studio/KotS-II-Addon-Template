@@ -1,11 +1,11 @@
 repositories {
     maven {
-    	url = "https://jitpack.io"
+    	url = "https://cursemaven.com"
     }
 }
     
 dependencies {
-	implementation 'com.github.Virtuoel:Pehkui:3.8.2-1.20.4-neoforge'
+	implementation 'curse.maven:pehkui-319596:5393108'
 }
 
 
@@ -27,7 +27,7 @@ repositories {
 }
 
  dependencies {
-    implementation 'maven.modrinth:keepers-of-the-stones-2:QiTkvz6l'
+    implementation 'maven.modrinth:keepers-of-the-stones-2:KS8A5lKU'
  }
 
 

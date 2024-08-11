@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="power_template"
-version="11"
+version="12"
 displayName="Keepers of the Stones II: Addon Template"
 displayURL="https://mcreator.net"
 credits="Created by Environment Studios"
@@ -17,15 +17,15 @@ description="This is template workspace for creating custom stones  "
 [[dependencies.power_template]]
     modId="neoforge"
     type="required"
-    versionRange="[20.4.223,)"
-    ordering="NONE"
+    versionRange="[20.4.237,)"
+    ordering="AFTER"
     side="BOTH"
 
 [[dependencies.power_template]]
     modId="minecraft"
     type="required"
     versionRange="[1.20.4]"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 
 [[dependencies.power_template]]
@@ -60,3 +60,6 @@ description="This is template workspace for creating custom stones  "
     ordering="NONE"
     side="BOTH"
 
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration
