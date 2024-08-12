@@ -13,6 +13,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
+import com.esmods.keepersofthestonestwo.configuration.PowerConfigConfiguration;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
 
 public class CustomMasterEndProcedure {

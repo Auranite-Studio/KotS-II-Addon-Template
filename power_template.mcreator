@@ -94,7 +94,7 @@
     {
       "name": "CustomStoneUse",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "custom_stone_use",
       "metadata": {
@@ -285,7 +285,7 @@
     {
       "name": "CustomMasterEnd",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "custom_master_end",
       "metadata": {
@@ -953,7 +953,7 @@
     {
       "name": "CustomBatteryUse",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "custom_battery_use",
       "metadata": {
@@ -1012,6 +1012,12 @@
     "ITEMS:power:elemental_batteries": [
       "CUSTOM:CustomBattery"
     ],
+    "ITEMS:power:passing_armor": [
+      "CUSTOM:CustomArmor.helmet",
+      "CUSTOM:CustomArmor.body",
+      "CUSTOM:CustomArmor.legs",
+      "CUSTOM:CustomArmor.boots"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:CustomSword"
     ]
@@ -1022,9 +1028,9 @@
       "item.power_template.custom_sword": "Custom Sword",
       "item_group.power_template.custom_stones": "Custom: Stones",
       "item.power_template.custom_armor_boots": "Custom Boots",
-      "item.power_template.custom_armor_chestplate": "Custom Chestplate",
-      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.power_template.custom_battery": "Battery",
+      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
+      "item.power_template.custom_armor_chestplate": "Custom Chestplate",
       "item_group.power_template.custom_batteries": "Custom: Batteries",
       "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
       "item.power_template.custom_armor_helmet": "Custom Helmet",

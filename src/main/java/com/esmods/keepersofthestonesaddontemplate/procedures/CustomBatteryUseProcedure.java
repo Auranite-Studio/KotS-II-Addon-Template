@@ -8,6 +8,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
+import com.esmods.keepersofthestonestwo.configuration.PowerConfigConfiguration;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModMobEffects;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
 import com.esmods.keepersofthestonesaddontemplate.PowerTemplateMod;

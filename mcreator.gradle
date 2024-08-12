@@ -27,7 +27,7 @@ repositories {
 }
 
  dependencies {
-    implementation 'maven.modrinth:keepers-of-the-stones-2:KS8A5lKU'
+    implementation 'maven.modrinth:keepers-of-the-stones-2:Df21gLW9'
  }
 
 
