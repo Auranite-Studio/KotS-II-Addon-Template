@@ -41,7 +41,7 @@ public class CustomBatteryUseProcedure {
 				}
 				{
 					PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
-					_vars.check_activating_stone = true;
+					_vars.send_client_package = true;
 					_vars.syncPlayerVariables(entity);
 				}
 			}

@@ -1075,8 +1075,8 @@
     "mcreatorDependencies": [
       "pehkui",
       "geckolib",
-      "cpapi",
-      "playeranimator"
+      "playeranimator",
+      "cpapi_local"
     ],
     "currentGenerator": "neoforge-1.20.4",
     "credits": "Created by Environment Studios",
