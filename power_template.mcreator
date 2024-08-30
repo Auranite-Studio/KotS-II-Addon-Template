@@ -1061,7 +1061,7 @@
   "workspaceSettings": {
     "modid": "power_template",
     "modName": "Keepers of the Stones II: Addon Template",
-    "version": "12",
+    "version": "14",
     "description": "This is template workspace for creating custom stones  ",
     "author": "Environment Studios",
     "websiteURL": "https://mcreator.net",
@@ -1075,8 +1075,8 @@
     "mcreatorDependencies": [
       "pehkui",
       "geckolib",
-      "playeranimator",
-      "cpapi_local"
+      "cpapi",
+      "playeranimator"
     ],
     "currentGenerator": "neoforge-1.20.4",
     "credits": "Created by Environment Studios",
