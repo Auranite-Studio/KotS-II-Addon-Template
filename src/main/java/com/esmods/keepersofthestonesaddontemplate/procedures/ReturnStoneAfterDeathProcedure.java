@@ -29,8 +29,8 @@ public class ReturnStoneAfterDeathProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (!entity.getData(PowerModVariables.PLAYER_VARIABLES).active) {
-			if (!entity.getData(PowerModVariables.PLAYER_VARIABLES).battery) {
+		if (!entity.getData(PowerModVariables.PLAYER_VARIABLES).active_power) {
+			if (!entity.getData(PowerModVariables.PLAYER_VARIABLES).active_battery) {
 				if ((entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_first).equals("custom")) {
 					{
 						PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);

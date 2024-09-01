@@ -22,17 +22,6 @@ dependencies {
 
 repositories {
  maven {
-     url = 'https://api.modrinth.com/maven'
- }
-}
-
- dependencies {
-    implementation 'maven.modrinth:keepers-of-the-stones-2:ao8qwQ7m'
- }
-
-
-repositories {
- maven {
      url = 'https://maven.kosmx.dev/'
  }
 }
@@ -40,5 +29,10 @@ repositories {
  dependencies {
    implementation 'dev.kosmx.player-anim:player-animation-lib-forge:1.0.2-rc1+1.20.4'
  }
+
+
+dependencies {
+   implementation files('C:/Users/Alexey/Desktop/power-1.0.0.40.010920241720-neoforge-1.20.4.jar')
+}
 
 

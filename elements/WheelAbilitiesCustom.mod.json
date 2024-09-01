@@ -76,6 +76,9 @@
           "onClick": {
             "name": "CustomAttack1"
           },
+          "displayCondition": {
+            "name": "PowerLockCheck"
+          },
           "x": 190,
           "y": 36
         }
@@ -89,6 +92,9 @@
           "onClick": {
             "name": "CustomAttack2"
           },
+          "displayCondition": {
+            "name": "PowerLockCheck"
+          },
           "x": 251,
           "y": 97
         }
@@ -101,6 +107,9 @@
           "hoveredImage": "ability_3_highlight.png",
           "onClick": {
             "name": "CustomAttack3"
+          },
+          "displayCondition": {
+            "name": "PowerLockCheck"
           },
           "x": 190,
           "y": 158

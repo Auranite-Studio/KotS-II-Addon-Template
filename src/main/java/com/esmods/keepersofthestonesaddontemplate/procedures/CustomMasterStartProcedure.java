@@ -17,7 +17,7 @@ public class CustomMasterStartProcedure {
 			return;
 		{
 			PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
-			_vars.active = true;
+			_vars.active_power = true;
 			_vars.syncPlayerVariables(entity);
 		}
 		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).mergers == 0) {
