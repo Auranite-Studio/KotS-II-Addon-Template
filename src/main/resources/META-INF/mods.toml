@@ -17,7 +17,7 @@ description="This is template workspace for creating custom stones  "
 [[dependencies.power_template]]
     modId="neoforge"
     type="required"
-    versionRange="[20.4.237,)"
+    versionRange="[20.4.223,)"
     ordering="AFTER"
     side="BOTH"
 

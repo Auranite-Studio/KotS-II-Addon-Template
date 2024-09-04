@@ -25,7 +25,7 @@ runs {
 }
 
 dependencies {
-    implementation 'net.neoforged:neoforge:20.4.237'
+    implementation 'net.neoforged:neoforge:20.4.223'
 }
 
 tasks.withType(JavaCompile).configureEach {
