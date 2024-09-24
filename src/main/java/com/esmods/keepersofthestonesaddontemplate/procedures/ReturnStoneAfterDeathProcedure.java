@@ -2,7 +2,7 @@ package com.esmods.keepersofthestonesaddontemplate.procedures;
 
 import net.neoforged.neoforge.items.ItemHandlerHelper;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
@@ -15,7 +15,7 @@ import javax.annotation.Nullable;
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ReturnStoneAfterDeathProcedure {
 	@SubscribeEvent
 	public static void onPlayerRespawned(PlayerEvent.PlayerRespawnEvent event) {

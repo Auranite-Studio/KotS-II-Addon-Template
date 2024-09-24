@@ -1,7 +1,7 @@
 package com.esmods.keepersofthestonesaddontemplate.procedures;
 
-import net.neoforged.neoforge.event.TickEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
@@ -15,13 +15,11 @@ import com.esmods.keepersofthestonestwo.network.PowerModVariables;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModMobEffects;
 import com.esmods.keepersofthestonesaddontemplate.PowerTemplateMod;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class DetransformKeyProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.level(), event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -34,7 +32,7 @@ public class DetransformKeyProcedure {
 		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).detransf_key_var) {
 			PowerTemplateMod.queueServerWork(1, () -> {
 				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(PowerTemplateModMobEffects.CUSTOM_MASTER.get());
+					_entity.removeEffect(PowerTemplateModMobEffects.CUSTOM_MASTER);
 			});
 		}
 	}

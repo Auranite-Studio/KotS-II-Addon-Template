@@ -15,7 +15,7 @@ public class CustomMasterMobEffect extends MobEffect {
 
 	@Override
 	public void onEffectStarted(LivingEntity entity, int amplifier) {
-		CustomMasterStartProcedure.execute(entity);
+		CustomMasterStartProcedure.execute(entity.level(), entity);
 	}
 
 	@Override
@@ -24,7 +24,8 @@ public class CustomMasterMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
 		EnhancedAbilitiesProcedure.execute(entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }

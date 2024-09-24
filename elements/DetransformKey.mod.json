@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">player_ticks</field><next><block type=\"controls_if\"><comment h=\"80\" pinned=\"false\" w=\"160\">This procedure is performed when the stone deactivation key is pressed</comment><value name=\"IF0\"><block type=\"get_detransform_key_pressed\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><statement name=\"DO0\"><block type=\"wait\"><value name=\"ticks\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><statement name=\"do\"><block type=\"entity_remove_specific_potion_effect\"><field name=\"potion\">CUSTOM:CustomMaster</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></statement></block></statement></block></next></block></xml>"
