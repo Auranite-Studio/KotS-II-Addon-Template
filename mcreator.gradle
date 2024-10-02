@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'software.bernie.geckolib:geckolib-neoforge-1.21.1:4.6.5'
+  implementation 'software.bernie.geckolib:geckolib-neoforge-1.21.1:4.6.6'
 }
 
 
@@ -27,7 +27,7 @@ repositories {
 }
 
  dependencies {
-    implementation 'maven.modrinth:keepers-of-the-stones-2:W9OjEIzZ'
+    implementation 'maven.modrinth:keepers-of-the-stones-2:Ntp8FxWx'
  }
 
 

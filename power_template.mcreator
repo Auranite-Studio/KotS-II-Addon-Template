@@ -1067,9 +1067,9 @@
       "item.power_template.custom_sword": "Custom Sword",
       "item_group.power_template.custom_stones": "Custom: Stones",
       "item.power_template.custom_armor_boots": "Custom Boots",
-      "item.power_template.custom_armor_chestplate": "Custom Chestplate",
-      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.power_template.custom_battery": "Battery",
+      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
+      "item.power_template.custom_armor_chestplate": "Custom Chestplate",
       "item_group.power_template.custom_batteries": "Custom: Batteries",
       "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
       "item.power_template.custom_armor_helmet": "Custom Helmet",
@@ -1121,5 +1121,5 @@
     "credits": "Created by Environment Studios",
     "modElementsPackage": "com.esmods.keepersofthestonesaddontemplate"
   },
-  "mcreatorVersion": 202400338723
+  "mcreatorVersion": 202400399999
 }
