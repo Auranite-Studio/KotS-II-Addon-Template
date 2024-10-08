@@ -12,13 +12,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.component.DataComponents;
 
+import com.esmods.keepersofthestonestwo.procedures.SendClientPackageActivationStoneVFXProcedure;
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModMobEffects;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
 import com.esmods.keepersofthestonesaddontemplate.PowerTemplateMod;
 
 public class CustomStoneUseProcedure {
-	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("power:passing_armor")))
@@ -43,11 +44,7 @@ public class CustomStoneUseProcedure {
 					_vars.power = entity.getData(PowerModVariables.PLAYER_VARIABLES).max_power;
 					_vars.syncPlayerVariables(entity);
 				}
-				{
-					PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
-					_vars.send_client_package = true;
-					_vars.syncPlayerVariables(entity);
-				}
+				SendClientPackageActivationStoneVFXProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}

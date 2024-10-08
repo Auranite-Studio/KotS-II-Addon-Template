@@ -111,6 +111,18 @@
             "type": "itemstack"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -1017,16 +1029,10 @@
       "locked_code": false,
       "registry_name": "power_lock_check",
       "metadata": {
-        "return_type": "logic",
         "files": [
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/PowerLockCheckProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     }
   ],
@@ -1100,7 +1106,7 @@
   "workspaceSettings": {
     "modid": "power_template",
     "modName": "Keepers of the Stones II: Addon Template",
-    "version": "15",
+    "version": "17",
     "description": "This is template workspace for creating custom stones  ",
     "author": "Environment Studios",
     "websiteURL": "https://mcreator.net",
