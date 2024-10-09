@@ -19,7 +19,7 @@ import net.minecraft.client.Minecraft;
 import java.util.List;
 
 import com.esmods.keepersofthestonesaddontemplate.procedures.RechargeStoneTickEventProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.GetRechargeInfoProcedure;
+import com.esmods.keepersofthestonesaddontemplate.procedures.RechargeInfoGetterProcedure;
 import com.esmods.keepersofthestonesaddontemplate.procedures.CustomStoneUseProcedure;
 
 public class CustomStoneItem extends Item {
@@ -32,7 +32,7 @@ public class CustomStoneItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
-		list.add(Component.literal(GetRechargeInfoProcedure.execute(itemstack)));
+		list.add(Component.literal(RechargeInfoGetterProcedure.execute(itemstack)));
 	}
 
 	@Override

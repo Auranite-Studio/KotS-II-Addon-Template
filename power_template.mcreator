@@ -1,26 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "GetRechargeInfo",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_recharge_info",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/GetRechargeInfoProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Recharge"
-    },
-    {
       "name": "RechargeStoneTickEvent",
       "type": "procedure",
       "compiles": true,
@@ -990,6 +970,18 @@
             "type": "itemstack"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -1032,8 +1024,34 @@
         "files": [
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/PowerLockCheckProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic"
       }
+    },
+    {
+      "name": "RechargeInfoGetter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recharge_info_getter",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/RechargeInfoGetterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Recharge"
     }
   ],
   "variable_elements": [],
@@ -1073,9 +1091,9 @@
       "item.power_template.custom_sword": "Custom Sword",
       "item_group.power_template.custom_stones": "Custom: Stones",
       "item.power_template.custom_armor_boots": "Custom Boots",
-      "item.power_template.custom_battery": "Battery",
-      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.power_template.custom_armor_chestplate": "Custom Chestplate",
+      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
+      "item.power_template.custom_battery": "Battery",
       "item_group.power_template.custom_batteries": "Custom: Batteries",
       "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
       "item.power_template.custom_armor_helmet": "Custom Helmet",
@@ -1120,8 +1138,8 @@
     "mcreatorDependencies": [
       "pehkui",
       "geckolib",
-      "cpapi",
-      "playeranimator"
+      "playeranimator",
+      "cpapi_local"
     ],
     "currentGenerator": "neoforge-1.21.1",
     "credits": "Created by Environment Studios",

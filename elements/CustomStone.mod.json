@@ -51,7 +51,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [],
-      "name": "GetRechargeInfo"
+      "name": "RechargeInfoGetter"
     },
     "glowCondition": {
       "fixedValue": false
