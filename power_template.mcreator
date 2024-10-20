@@ -482,24 +482,6 @@
       "path": "~/CustomStone"
     },
     {
-      "name": "EnhancedAbilities",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enhanced_abilities",
-      "metadata": {
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/EnhancedAbilitiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "ReturnStoneAfterDeath",
       "type": "procedure",
       "compiles": true,
@@ -1091,9 +1073,9 @@
       "item.power_template.custom_sword": "Custom Sword",
       "item_group.power_template.custom_stones": "Custom: Stones",
       "item.power_template.custom_armor_boots": "Custom Boots",
-      "item.power_template.custom_armor_chestplate": "Custom Chestplate",
-      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.power_template.custom_battery": "Battery",
+      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
+      "item.power_template.custom_armor_chestplate": "Custom Chestplate",
       "item_group.power_template.custom_batteries": "Custom: Batteries",
       "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
       "item.power_template.custom_armor_helmet": "Custom Helmet",
@@ -1124,7 +1106,7 @@
   "workspaceSettings": {
     "modid": "power_template",
     "modName": "Keepers of the Stones II: Addon Template",
-    "version": "17",
+    "version": "18",
     "description": "This is template workspace for creating custom stones  ",
     "author": "Environment Studios",
     "websiteURL": "https://mcreator.net",

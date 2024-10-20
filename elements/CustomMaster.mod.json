@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Custom Master",
-    "icon": "custom_master.png",
+    "icon": "custom_master",
     "color": {
       "value": -16764109,
       "falpha": 0.0
@@ -17,9 +17,6 @@
     "isCuredbyHoney": false,
     "onStarted": {
       "name": "CustomMasterStart"
-    },
-    "onActiveTick": {
-      "name": "EnhancedAbilities"
     },
     "onExpired": {
       "name": "CustomMasterEnd"
