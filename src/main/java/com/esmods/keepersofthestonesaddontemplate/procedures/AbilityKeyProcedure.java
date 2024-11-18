@@ -5,13 +5,11 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
 import javax.annotation.Nullable;
 
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
-import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModMobEffects;
 
 @EventBusSubscriber
 public class AbilityKeyProcedure {
@@ -29,7 +27,9 @@ public class AbilityKeyProcedure {
 			return;
 		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).use_ability_key_var) {
 			if (entity.getData(PowerModVariables.PLAYER_VARIABLES).ability_block == false) {
-				if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PowerTemplateModMobEffects.CUSTOM_MASTER)) {
+				if ((entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_first).equals("custom") || (entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_second).equals("custom")
+						|| (entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_third).equals("custom") || (entity.getData(PowerModVariables.PLAYER_VARIABLES).fake_element_name_first).equals("custom")
+						|| (entity.getData(PowerModVariables.PLAYER_VARIABLES).fake_element_name_second).equals("custom") || (entity.getData(PowerModVariables.PLAYER_VARIABLES).fake_element_name_third).equals("custom")) {
 					CustomSpecialAttackProcedure.execute(entity);
 				}
 			}
