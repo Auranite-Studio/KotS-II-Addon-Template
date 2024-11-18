@@ -1045,26 +1045,14 @@
     "ITEMS:power:elemental_batteries": [
       "CUSTOM:CustomBattery"
     ],
-    "ITEMS:minecraft:head_armor": [
-      "~CUSTOM:CustomArmor.helmet"
-    ],
-    "ITEMS:minecraft:foot_armor": [
-      "~CUSTOM:CustomArmor.boots"
-    ],
     "ITEMS:power:passing_armor": [
       "CUSTOM:CustomArmor.helmet",
       "CUSTOM:CustomArmor.body",
       "CUSTOM:CustomArmor.legs",
       "CUSTOM:CustomArmor.boots"
     ],
-    "ITEMS:minecraft:chest_armor": [
-      "~CUSTOM:CustomArmor.body"
-    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:CustomSword"
-    ],
-    "ITEMS:minecraft:leg_armor": [
-      "~CUSTOM:CustomArmor.legs"
     ]
   },
   "tab_element_order": {},
@@ -1073,9 +1061,9 @@
       "item.power_template.custom_sword": "Custom Sword",
       "item_group.power_template.custom_stones": "Custom: Stones",
       "item.power_template.custom_armor_boots": "Custom Boots",
-      "item.power_template.custom_armor_chestplate": "Custom Chestplate",
-      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.power_template.custom_battery": "Battery",
+      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
+      "item.power_template.custom_armor_chestplate": "Custom Chestplate",
       "item_group.power_template.custom_batteries": "Custom: Batteries",
       "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
       "item.power_template.custom_armor_helmet": "Custom Helmet",
@@ -1123,7 +1111,7 @@
       "cpapi",
       "playeranimator"
     ],
-    "currentGenerator": "neoforge-1.21.1",
+    "currentGenerator": "forge-1.20.1",
     "credits": "Created by Environment Studios",
     "modElementsPackage": "com.esmods.keepersofthestonesaddontemplate"
   },

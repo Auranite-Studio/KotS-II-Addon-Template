@@ -1,9 +1,9 @@
 package com.esmods.keepersofthestonesaddontemplate.procedures;
 
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.Event;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.entity.Entity;
 
@@ -11,11 +11,13 @@ import javax.annotation.Nullable;
 
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
 
-@EventBusSubscriber
+@Mod.EventBusSubscriber
 public class AbilityKeyProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		execute(event, event.getEntity());
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		if (event.phase == TickEvent.Phase.END) {
+			execute(event, event.player);
+		}
 	}
 
 	public static void execute(Entity entity) {
@@ -25,11 +27,14 @@ public class AbilityKeyProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).use_ability_key_var) {
-			if (entity.getData(PowerModVariables.PLAYER_VARIABLES).ability_block == false) {
-				if ((entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_first).equals("custom") || (entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_second).equals("custom")
-						|| (entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_third).equals("custom") || (entity.getData(PowerModVariables.PLAYER_VARIABLES).fake_element_name_first).equals("custom")
-						|| (entity.getData(PowerModVariables.PLAYER_VARIABLES).fake_element_name_second).equals("custom") || (entity.getData(PowerModVariables.PLAYER_VARIABLES).fake_element_name_third).equals("custom")) {
+		if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).use_ability_key_var) {
+			if ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).ability_block == false) {
+				if (((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).element_name_first).equals("custom")
+						|| ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).element_name_second).equals("custom")
+						|| ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).element_name_third).equals("custom")
+						|| ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).fake_element_name_first).equals("custom")
+						|| ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).fake_element_name_second).equals("custom")
+						|| ((entity.getCapability(PowerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PowerModVariables.PlayerVariables())).fake_element_name_third).equals("custom")) {
 					CustomSpecialAttackProcedure.execute(entity);
 				}
 			}
