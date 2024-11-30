@@ -10,6 +10,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.core.registries.Registries;
 
+import com.esmods.keepersofthestonestwo.procedures.MasterEffectStartControlProcedure;
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
 
@@ -126,5 +127,6 @@ public class CustomMasterStartProcedure {
 				_player.getInventory().setChanged();
 		}
 		(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.VANISHING_CURSE), 1);
+		MasterEffectStartControlProcedure.execute(world, entity);
 	}
 }
