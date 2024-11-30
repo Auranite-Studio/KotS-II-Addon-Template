@@ -62,7 +62,7 @@ repositories {
 }
 
  dependencies {
-   implementation fg.deobf("maven.modrinth:keepers-of-the-stones-2:bVjV8J8F")
+    implementation fg.deobf("maven.modrinth:keepers-of-the-stones-2:bVjV8J8F")
  }
 
 
