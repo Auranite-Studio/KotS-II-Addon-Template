@@ -19,13 +19,9 @@ public class PowerTemplateModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CUSTOM_STONES = REGISTRY.register("custom_stones",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.power_template.custom_stones")).icon(() -> new ItemStack(PowerTemplateModItems.CUSTOM_STONE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PowerTemplateModItems.CUSTOM_STONE.get());
-			})
-
-					.build());
+			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CUSTOM_BATTERIES = REGISTRY.register("custom_batteries",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.power_template.custom_batteries")).icon(() -> new ItemStack(PowerTemplateModItems.CUSTOM_BATTERY.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PowerTemplateModItems.CUSTOM_BATTERY.get());
-			})
-
-					.build());
+			}).withTabsBefore(CUSTOM_STONES.getId()).build());
 }
