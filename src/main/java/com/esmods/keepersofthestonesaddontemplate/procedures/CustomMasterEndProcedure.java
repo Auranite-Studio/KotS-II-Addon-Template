@@ -30,7 +30,11 @@ public class CustomMasterEndProcedure {
 			}
 		}
 		MasterEffectEndControlProcedure.execute(world, entity);
-		DetransformKeyProcedure.execute(world, entity);
+		{
+			PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
+			_vars.detransf_key_var = true;
+			_vars.syncPlayerVariables(entity);
+		}
 		if ((entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_first).equals("custom")) {
 			{
 				PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
