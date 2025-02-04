@@ -4,62 +4,65 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="power_template"
-version="20"
+version="20.1"
 displayName="Keepers of the Stones II: Addon Template"
 displayURL="https://mcreator.net"
-credits="Created by Environment Studios"
-authors="Environment Studios"
+credits="Created by Auranite Studio"
+authors="Auranite Studio"
 description="This is template workspace for creating custom stones  "
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
 [[dependencies.power_template]]
-    modId="neoforge"
-    type="required"
-    versionRange="[21.1.65,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.power_template]]
-    modId="minecraft"
-    type="required"
-    versionRange="[1.21.1]"
-    ordering="AFTER"
-    side="BOTH"
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.power_template]]
-    modId="power"
-    type="required"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
+modId="power"
+type="required"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 
 [[dependencies.power_template]]
-    modId="pehkui"
-    type="optional"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
+modId="pehkui"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 [[dependencies.power_template]]
-    modId="geckolib"
-    type="optional"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
+modId="geckolib"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 [[dependencies.power_template]]
-    modId="cpapi"
-    type="optional"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
+modId="cpapi"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 [[dependencies.power_template]]
-    modId="playeranimator"
-    type="optional"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
+modId="playeranimator"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 
+
+[[mixins]]
+    config="mixins.power_template.json"
 
 # Start of user code block dependencies configuration
 # End of user code block dependencies configuration
