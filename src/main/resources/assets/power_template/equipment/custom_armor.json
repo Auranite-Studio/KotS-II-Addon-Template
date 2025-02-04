@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "power_template:custom_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "power_template:custom_armor"
+      }
+    ]
+  }
+}

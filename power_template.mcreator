@@ -51,9 +51,10 @@
       "registry_name": "custom_stone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/power_template/items/custom_stone.json",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomStoneItem.java",
-          "src/main/resources/assets/power_template/models/item/custom_stone_0.json",
-          "src/main/resources/assets/power_template/models/item/custom_stone.json"
+          "src/main/resources/assets/power_template/models/item/custom_stone.json",
+          "src/main/resources/assets/power_template/models/item/custom_stone_0.json"
         ]
       },
       "path": "~/CustomStone"
@@ -118,10 +119,15 @@
       "registry_name": "custom_armor",
       "metadata": {
         "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomArmorItem.java",
-          "src/main/resources/assets/power_template/models/item/custom_armor_chestplate.json",
+          "src/main/resources/assets/power_template/items/custom_armor_chestplate.json",
+          "src/main/resources/assets/power_template/items/custom_armor_helmet.json",
+          "src/main/resources/assets/power_template/equipment/custom_armor.json",
           "src/main/resources/assets/power_template/models/item/custom_armor_helmet.json",
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomArmorItem.java",
+          "src/main/resources/assets/power_template/items/custom_armor_boots.json",
+          "src/main/resources/assets/power_template/models/item/custom_armor_chestplate.json",
           "src/main/resources/assets/power_template/models/item/custom_armor_leggings.json",
+          "src/main/resources/assets/power_template/items/custom_armor_leggings.json",
           "src/main/resources/assets/power_template/models/item/custom_armor_boots.json"
         ]
       },
@@ -211,8 +217,9 @@
       "registry_name": "custom_sword",
       "metadata": {
         "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomSwordItem.java",
-          "src/main/resources/assets/power_template/models/item/custom_sword.json"
+          "src/main/resources/assets/power_template/models/item/custom_sword.json",
+          "src/main/resources/assets/power_template/items/custom_sword.json",
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomSwordItem.java"
         ]
       },
       "path": "~/CustomStone"
@@ -363,9 +370,9 @@
       "registry_name": "wheel_abilities_custom",
       "metadata": {
         "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/client/gui/WheelAbilitiesCustomScreen.java",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/world/inventory/WheelAbilitiesCustomMenu.java",
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/network/WheelAbilitiesCustomButtonMessage.java"
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/network/WheelAbilitiesCustomButtonMessage.java",
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/client/gui/WheelAbilitiesCustomScreen.java"
         ]
       },
       "path": "~/CustomStone"
@@ -926,8 +933,9 @@
       "registry_name": "custom_battery",
       "metadata": {
         "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomBatteryItem.java",
-          "src/main/resources/assets/power_template/models/item/custom_battery.json"
+          "src/main/resources/assets/power_template/items/custom_battery.json",
+          "src/main/resources/assets/power_template/models/item/custom_battery.json",
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomBatteryItem.java"
         ]
       },
       "path": "~/CustomStone"
@@ -1073,9 +1081,9 @@
       "item.power_template.custom_sword": "Custom Sword",
       "item_group.power_template.custom_stones": "Custom: Stones",
       "item.power_template.custom_armor_boots": "Custom Boots",
-      "item.power_template.custom_battery": "Battery",
-      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
       "item.power_template.custom_armor_chestplate": "Custom Chestplate",
+      "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_1_uses_10": "Custom attack 1, uses 10",
+      "item.power_template.custom_battery": "Battery",
       "item_group.power_template.custom_batteries": "Custom: Batteries",
       "gui.power_template.wheel_abilities_custom.tooltip_custom_attack_3_uses_10": "Custom attack 3, uses 10",
       "item.power_template.custom_armor_helmet": "Custom Helmet",
@@ -1106,7 +1114,7 @@
   "workspaceSettings": {
     "modid": "power_template",
     "modName": "Keepers of the Stones II: Addon Template",
-    "version": "20.1",
+    "version": "23",
     "description": "This is template workspace for creating custom stones  ",
     "author": "Auranite Studio",
     "websiteURL": "https://mcreator.net",
@@ -1118,14 +1126,12 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "pehkui",
-      "geckolib",
       "cpapi",
       "playeranimator"
     ],
-    "currentGenerator": "neoforge-1.21.1",
+    "currentGenerator": "neoforge-1.21.4",
     "credits": "Created by Auranite Studio",
     "modElementsPackage": "com.esmods.keepersofthestonesaddontemplate"
   },
-  "mcreatorVersion": 202400404220
+  "mcreatorVersion": 202500106214
 }

@@ -1,0 +1,25 @@
+{
+  "model": {
+    "type": "power_template:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "power_template:custom_stone/rechage"
+            },
+            "value": 0.01
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "power_template:item/custom_stone_0"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "power_template:item/custom_stone"
+    }
+  }
+}
