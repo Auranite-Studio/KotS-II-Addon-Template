@@ -128,82 +128,6 @@
       "path": "~/CustomStone"
     },
     {
-      "name": "CustomArmorHelmetRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom_armor_helmet_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomArmorHelmetRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/CustomStone"
-    },
-    {
-      "name": "CustomArmorChestplateRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom_armor_chestplate_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomArmorChestplateRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/CustomStone"
-    },
-    {
-      "name": "CustomArmorLeggingsRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom_armor_leggings_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomArmorLeggingsRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/CustomStone"
-    },
-    {
-      "name": "CustomArmorBootsRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom_armor_boots_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomArmorBootsRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/CustomStone"
-    },
-    {
       "name": "CustomSword",
       "type": "tool",
       "compiles": true,
@@ -213,25 +137,6 @@
         "files": [
           "src/main/resources/assets/power_template/models/item/custom_sword.json",
           "src/main/java/com/esmods/keepersofthestonesaddontemplate/item/CustomSwordItem.java"
-        ]
-      },
-      "path": "~/CustomStone"
-    },
-    {
-      "name": "CustomSwordRemove",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom_sword_remove",
-      "metadata": {
-        "files": [
-          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/CustomSwordRemoveProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       },
       "path": "~/CustomStone"
@@ -1034,6 +939,28 @@
         ]
       },
       "path": "~/Recharge"
+    },
+    {
+      "name": "ForbiddenItemsRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forbidden_items_remove",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/com/esmods/keepersofthestonesaddontemplate/procedures/ForbiddenItemsRemoveProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

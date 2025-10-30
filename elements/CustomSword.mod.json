@@ -8,6 +8,7 @@
     "texture": "custom_sword",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Custom Sword",
     "specialInformation": {
       "fixedValue": []
@@ -27,8 +28,8 @@
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onItemInInventoryTick": {
-      "name": "CustomSwordRemove"
+    "onItemInUseTick": {
+      "name": "ForbiddenItemsRemove"
     }
   }
 }

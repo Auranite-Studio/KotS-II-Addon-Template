@@ -5,15 +5,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
-import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
 
-public class CustomArmorBootsRemoveProcedure {
-	public static void execute(Entity entity) {
+public class ForbiddenItemsRemoveProcedure {
+	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).active_power == false) {
 			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(PowerTemplateModItems.CUSTOM_ARMOR_BOOTS.get());
+				ItemStack _stktoremove = itemstack;
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 		}

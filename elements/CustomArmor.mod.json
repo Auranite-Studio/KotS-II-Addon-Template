@@ -11,16 +11,16 @@
     "enableBoots": true,
     "textureBoots": "custom_boots",
     "onHelmetTick": {
-      "name": "CustomArmorHelmetRemove"
+      "name": "ForbiddenItemsRemove"
     },
     "onBodyTick": {
-      "name": "CustomArmorChestplateRemove"
+      "name": "ForbiddenItemsRemove"
     },
     "onLeggingsTick": {
-      "name": "CustomArmorLeggingsRemove"
+      "name": "ForbiddenItemsRemove"
     },
     "onBootsTick": {
-      "name": "CustomArmorBootsRemove"
+      "name": "ForbiddenItemsRemove"
     },
     "creativeTabs": [],
     "armorTextureFile": "custom_armor",
@@ -68,6 +68,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

@@ -24,10 +24,7 @@ import java.util.EnumMap;
 
 import com.google.common.collect.Iterables;
 
-import com.esmods.keepersofthestonesaddontemplate.procedures.CustomArmorLeggingsRemoveProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.CustomArmorHelmetRemoveProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.CustomArmorChestplateRemoveProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.CustomArmorBootsRemoveProcedure;
+import com.esmods.keepersofthestonesaddontemplate.procedures.ForbiddenItemsRemoveProcedure;
 
 @EventBusSubscriber
 public abstract class CustomArmorItem extends ArmorItem {
@@ -61,7 +58,7 @@ public abstract class CustomArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				CustomArmorHelmetRemoveProcedure.execute(entity);
+				ForbiddenItemsRemoveProcedure.execute(entity, itemstack);
 			}
 		}
 	}
@@ -75,7 +72,7 @@ public abstract class CustomArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				CustomArmorChestplateRemoveProcedure.execute(entity);
+				ForbiddenItemsRemoveProcedure.execute(entity, itemstack);
 			}
 		}
 	}
@@ -89,7 +86,7 @@ public abstract class CustomArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				CustomArmorLeggingsRemoveProcedure.execute(entity);
+				ForbiddenItemsRemoveProcedure.execute(entity, itemstack);
 			}
 		}
 	}
@@ -103,7 +100,7 @@ public abstract class CustomArmorItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				CustomArmorBootsRemoveProcedure.execute(entity);
+				ForbiddenItemsRemoveProcedure.execute(entity, itemstack);
 			}
 		}
 	}

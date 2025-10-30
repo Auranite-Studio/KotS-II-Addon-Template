@@ -16,7 +16,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.core.component.DataComponents;
 
-import com.esmods.keepersofthestonesaddontemplate.procedures.CustomSwordRemoveProcedure;
+import com.esmods.keepersofthestonesaddontemplate.procedures.ForbiddenItemsRemoveProcedure;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
 
 @EventBusSubscriber
@@ -65,6 +65,7 @@ public class CustomSwordItem extends SwordItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		CustomSwordRemoveProcedure.execute(entity);
+		if (selected)
+			ForbiddenItemsRemoveProcedure.execute(entity, itemstack);
 	}
 }
