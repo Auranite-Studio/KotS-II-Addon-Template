@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -35,7 +34,7 @@ public class PowerTemplateModItems {
 
 	// Start of user code block custom items
 	// End of user code block custom items
-	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	@EventBusSubscriber(Dist.CLIENT)
 	public static class ItemsClientSideHandler {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)

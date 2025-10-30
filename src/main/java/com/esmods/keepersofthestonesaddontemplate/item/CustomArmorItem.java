@@ -1,4 +1,3 @@
-
 package com.esmods.keepersofthestonesaddontemplate.item;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
@@ -30,7 +29,7 @@ import com.esmods.keepersofthestonesaddontemplate.procedures.CustomArmorHelmetRe
 import com.esmods.keepersofthestonesaddontemplate.procedures.CustomArmorChestplateRemoveProcedure;
 import com.esmods.keepersofthestonesaddontemplate.procedures.CustomArmorBootsRemoveProcedure;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public abstract class CustomArmorItem extends ArmorItem {
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
@@ -43,7 +42,7 @@ public abstract class CustomArmorItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 8);
 				map.put(ArmorItem.Type.HELMET, 3);
 				map.put(ArmorItem.Type.BODY, 8);
-			}), 0, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("power_template:custom_armor"))), 0f, 0f);
+			}), 1, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("power_template:custom_armor"))), 0f, 0f);
 			registerHelper.register(ResourceLocation.parse("power_template:custom_armor"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

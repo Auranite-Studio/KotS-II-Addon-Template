@@ -35,7 +35,7 @@ public class ReturnStoneAfterDeathProcedure {
 					{
 						PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 						_vars.element_name_first = "0";
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PowerTemplateModItems.CUSTOM_STONE.get()).copy();
@@ -46,7 +46,7 @@ public class ReturnStoneAfterDeathProcedure {
 					{
 						PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 						_vars.element_name_second = "0";
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PowerTemplateModItems.CUSTOM_STONE.get()).copy();
@@ -57,7 +57,7 @@ public class ReturnStoneAfterDeathProcedure {
 					{
 						PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 						_vars.element_name_third = "0";
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(PowerTemplateModItems.CUSTOM_STONE.get()).copy();

@@ -1,4 +1,3 @@
-
 package com.esmods.keepersofthestonesaddontemplate.item;
 
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
@@ -20,7 +19,7 @@ import net.minecraft.core.component.DataComponents;
 import com.esmods.keepersofthestonesaddontemplate.procedures.CustomSwordRemoveProcedure;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class CustomSwordItem extends SwordItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
@@ -45,7 +44,7 @@ public class CustomSwordItem extends SwordItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 0;
+			return 1;
 		}
 
 		@Override

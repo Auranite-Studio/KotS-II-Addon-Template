@@ -1,4 +1,3 @@
-
 /*
  *	MCreator note: This file will be REGENERATED on each build.
  */
@@ -11,10 +10,14 @@ import net.neoforged.api.distmarker.Dist;
 
 import com.esmods.keepersofthestonesaddontemplate.client.gui.WheelAbilitiesCustomScreen;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class PowerTemplateModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(PowerTemplateModMenus.WHEEL_ABILITIES_CUSTOM.get(), WheelAbilitiesCustomScreen::new);
+	}
+
+	public interface ScreenAccessor {
+		void updateMenuState(int elementType, String name, Object elementState);
 	}
 }

@@ -12,7 +12,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.component.DataComponents;
 
-import com.esmods.keepersofthestonestwo.procedures.SendClientPackageActivationStoneVFXProcedure;
+import com.esmods.keepersofthestonestwo.procedures.ActivationStoneTriggerProcedure;
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModMobEffects;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
@@ -37,14 +37,14 @@ public class CustomStoneUseProcedure {
 				{
 					PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 					_vars.mergers = (entity.getData(PowerModVariables.PLAYER_VARIABLES).mergers + 1);
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				{
 					PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 					_vars.power = entity.getData(PowerModVariables.PLAYER_VARIABLES).max_power;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
-				SendClientPackageActivationStoneVFXProcedure.execute(world, x, y, z, entity);
+				ActivationStoneTriggerProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}

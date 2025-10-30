@@ -33,25 +33,25 @@ public class CustomMasterEndProcedure {
 		{
 			PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 			_vars.detransf_key_var = true;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		if ((entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_first).equals("custom")) {
 			{
 				PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 				_vars.element_name_first = "0";
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		} else if ((entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_second).equals("custom")) {
 			{
 				PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 				_vars.element_name_second = "0";
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		} else if ((entity.getData(PowerModVariables.PLAYER_VARIABLES).element_name_third).equals("custom")) {
 			{
 				PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 				_vars.element_name_third = "0";
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (entity.getData(PowerModVariables.PLAYER_VARIABLES).active_battery == false) {
@@ -66,7 +66,7 @@ public class CustomMasterEndProcedure {
 			{
 				PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 				_vars.active_battery = false;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

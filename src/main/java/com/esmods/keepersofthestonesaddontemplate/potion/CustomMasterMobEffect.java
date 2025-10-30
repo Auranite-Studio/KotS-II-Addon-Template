@@ -1,4 +1,3 @@
-
 package com.esmods.keepersofthestonesaddontemplate.potion;
 
 import net.minecraft.world.entity.LivingEntity;

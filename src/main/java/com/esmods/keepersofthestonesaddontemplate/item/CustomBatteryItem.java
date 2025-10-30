@@ -1,4 +1,3 @@
-
 package com.esmods.keepersofthestonesaddontemplate.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -6,7 +5,6 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -23,7 +21,7 @@ import com.esmods.keepersofthestonesaddontemplate.procedures.CustomBatteryDescPr
 
 public class CustomBatteryItem extends Item {
 	public CustomBatteryItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1));
 	}
 
 	@Override
@@ -31,7 +29,12 @@ public class CustomBatteryItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
-		list.add(Component.literal(CustomBatteryDescProcedure.execute()));
+		String hoverText = CustomBatteryDescProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override

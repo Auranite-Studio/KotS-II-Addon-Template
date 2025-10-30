@@ -11,7 +11,7 @@ public class OpenFirstFakeWheelProcedure {
 		{
 			PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 			_vars.first_fake_wheel_open_var = true;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 	}
 }

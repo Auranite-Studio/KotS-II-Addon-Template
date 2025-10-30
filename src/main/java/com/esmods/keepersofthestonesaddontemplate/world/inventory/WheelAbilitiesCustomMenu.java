@@ -1,4 +1,3 @@
-
 package com.esmods.keepersofthestonesaddontemplate.world.inventory;
 
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -19,11 +18,19 @@ import net.minecraft.core.BlockPos;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collections;
 
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModMenus;
 
-public class WheelAbilitiesCustomMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
-	public final static HashMap<String, Object> guistate = new HashMap<>();
+public class WheelAbilitiesCustomMenu extends AbstractContainerMenu implements PowerTemplateModMenus.MenuAccessor {
+	public final Map<String, Object> menuState = new HashMap<>() {
+		@Override
+		public Object put(String key, Object value) {
+			if (!this.containsKey(key) && this.size() >= 13)
+				return null;
+			return super.put(key, value);
+		}
+	};
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
@@ -68,7 +75,13 @@ public class WheelAbilitiesCustomMenu extends AbstractContainerMenu implements S
 		return ItemStack.EMPTY;
 	}
 
-	public Map<Integer, Slot> get() {
-		return customSlots;
+	@Override
+	public Map<Integer, Slot> getSlots() {
+		return Collections.unmodifiableMap(customSlots);
+	}
+
+	@Override
+	public Map<String, Object> getMenuState() {
+		return menuState;
 	}
 }

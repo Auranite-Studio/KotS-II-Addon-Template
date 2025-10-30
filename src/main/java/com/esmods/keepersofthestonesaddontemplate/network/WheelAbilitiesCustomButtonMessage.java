@@ -1,4 +1,3 @@
-
 package com.esmods.keepersofthestonesaddontemplate.network;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -16,21 +15,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import java.util.HashMap;
-
-import com.esmods.keepersofthestonesaddontemplate.world.inventory.WheelAbilitiesCustomMenu;
-import com.esmods.keepersofthestonesaddontemplate.procedures.OpenThirdWheelProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.OpenThirdFakeWheelProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.OpenSecondWheelProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.OpenSecondFakeWheelProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.OpenFirstWheelProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.OpenFirstFakeWheelProcedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.CustomAttack3Procedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.CustomAttack2Procedure;
-import com.esmods.keepersofthestonesaddontemplate.procedures.CustomAttack1Procedure;
+import com.esmods.keepersofthestonesaddontemplate.procedures.*;
 import com.esmods.keepersofthestonesaddontemplate.PowerTemplateMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record WheelAbilitiesCustomButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<WheelAbilitiesCustomButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PowerTemplateMod.MODID, "wheel_abilities_custom_buttons"));
@@ -47,14 +35,7 @@ public record WheelAbilitiesCustomButtonMessage(int buttonID, int x, int y, int 
 
 	public static void handleData(final WheelAbilitiesCustomButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
-			context.enqueueWork(() -> {
-				Player entity = context.player();
-				int buttonID = message.buttonID;
-				int x = message.x;
-				int y = message.y;
-				int z = message.z;
-				handleButtonAction(entity, buttonID, x, y, z);
-			}).exceptionally(e -> {
+			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
 				return null;
 			});
@@ -63,7 +44,6 @@ public record WheelAbilitiesCustomButtonMessage(int buttonID, int x, int y, int 
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = WheelAbilitiesCustomMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;

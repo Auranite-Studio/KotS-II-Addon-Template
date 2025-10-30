@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 79,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -28,6 +28,7 @@
         ]
       }
     ],
+    "animations": [],
     "name": "Custom Stone",
     "rarity": "COMMON",
     "creativeTabs": [
@@ -45,6 +46,7 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
+    "isPiglinCurrency": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -82,6 +84,7 @@
     "animation": "none",
     "isMusicDisc": false,
     "musicDiscLengthInTicks": 0,
-    "musicDiscAnalogOutput": 0
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": []
   }
 }

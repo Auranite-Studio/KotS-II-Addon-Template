@@ -10,7 +10,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
-import com.esmods.keepersofthestonestwo.procedures.SendClientPackageActivationStoneVFXProcedure;
+import com.esmods.keepersofthestonestwo.procedures.ActivationStoneTriggerProcedure;
 import com.esmods.keepersofthestonestwo.network.PowerModVariables;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModMobEffects;
 import com.esmods.keepersofthestonesaddontemplate.init.PowerTemplateModItems;
@@ -32,21 +32,21 @@ public class CustomBatteryUseProcedure {
 				{
 					PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 					_vars.active_battery = true;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PowerTemplateModMobEffects.CUSTOM_MASTER, (int) ((entity.getData(PowerModVariables.PLAYER_VARIABLES).master_effect_duration * 20) / 2), 0, false, false));
 				{
 					PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 					_vars.mergers = (entity.getData(PowerModVariables.PLAYER_VARIABLES).mergers + 1);
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				{
 					PowerModVariables.PlayerVariables _vars = entity.getData(PowerModVariables.PLAYER_VARIABLES);
 					_vars.power = 500;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
-				SendClientPackageActivationStoneVFXProcedure.execute(world, x, y, z, entity);
+				ActivationStoneTriggerProcedure.execute(world, x, y, z, entity);
 			}
 		}
 	}

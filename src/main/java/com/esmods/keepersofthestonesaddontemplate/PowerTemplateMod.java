@@ -40,14 +40,10 @@ public class PowerTemplateMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-
 		PowerTemplateModItems.REGISTRY.register(modEventBus);
-
 		PowerTemplateModTabs.REGISTRY.register(modEventBus);
-
 		PowerTemplateModMobEffects.REGISTRY.register(modEventBus);
 		PowerTemplateModMenus.REGISTRY.register(modEventBus);
-
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
